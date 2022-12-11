@@ -1,5 +1,10 @@
 package src;
 
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.Random;
+import java.util.List;
 
 public class Bisca {
     public static void main( String[] args )
@@ -76,8 +81,10 @@ public class Bisca {
             ///System.out.println(cartas);
             rodada++;
         }
+        
 
     }
+    
     
         
 }
