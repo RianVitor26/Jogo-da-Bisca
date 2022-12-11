@@ -7,8 +7,7 @@ import java.util.Random;
 import java.util.List;
 
 public class Bisca {
-    public static void main( String[] args )
-    {
+    public static void main(String[] args) {
         Map<String, Integer> value = new TreeMap<>();
         value.put("2", 0);
         value.put("3", 0);
@@ -78,13 +77,14 @@ public class Bisca {
             Jogador2.add(c2);
             cartas.remove(c2);
             System.out.println("*********************************************");
-            ///System.out.println(cartas);
+            /// System.out.println(cartas);
             rodada++;
+            if (rodada == 20) {
+                jogada_1 = 0;
+                jogada_2 = 0;
+            }
         }
-        
 
     }
-    
-    
-        
+
 }
