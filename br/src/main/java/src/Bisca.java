@@ -20,4 +20,13 @@ public class Bisca
         value.put("A", 11);
         value.put("7", 10);
     }
+    String[] nipes = { " Copas", " Espada", " Ouros", " Paus" };
+        List<String> cartas = new ArrayList<String>();
+        String carta;
+        for (int i = 0; i < 4; i++) {
+            for (String key : value.keySet()) {
+                carta = (key + nipes[i]);
+                cartas.add(carta);
+            }
+        }
 }
