@@ -1,9 +1,6 @@
 package src;
 
-/**
- * Hello world!
- *
- */
+
 public class Bisca {
     public static void main( String[] args )
     {
@@ -46,6 +43,40 @@ public class Bisca {
             Jogador2.add(carta_jogador);
             cartas.remove(carta_jogador);
         }
+
+        int rodada = 1;
+        /// Classe random
+        Random jogada = new Random();
+        int jogada_1 = jogada.nextInt(2);
+        int jogada_2 = jogada.nextInt(2);
+        String trunfo = cartas.get(rand.nextInt(cartas.size()));
+        /// Iniciando Jogo
+        /// selecionando nipe do jogo
+        System.out.println("BEM VINDO AO JOGO DE BISCA!!!!!!");
+        System.out.println("Carta Trunfo:" + trunfo);
+        /// System.out.println("(1) Bater Copas(2X pontos) (2) Cortar Nipe ");
+        /// Classe Game
+        for (int x = 0; x < 17; x++) {
+            System.out.println("Rodada " + rodada);
+            System.out.println("*********************************************");
+            System.out.println("Cartas Jogador 1: " + Jogador1);
+            System.out.println("Cartas Jogador 2: " + Jogador2);
+            System.out.println("*********************************************");
+            System.out.println("Jogada do Jogador_1: " + Jogador1.get(jogada_1));
+            Jogador1.remove(Jogador1.get(jogada_1));
+            System.out.println("Jogada do Jogador_2: " + Jogador2.get(jogada_2));
+            Jogador2.remove(Jogador2.get(jogada_2));
+            String c1 = cartas.get(rand.nextInt(cartas.size()));
+            Jogador1.add(c1);
+            cartas.remove(c1);
+            String c2 = cartas.get(rand.nextInt(cartas.size()));
+            Jogador2.add(c2);
+            cartas.remove(c2);
+            System.out.println("*********************************************");
+            ///System.out.println(cartas);
+            rodada++;
+        }
+
     }
     
         
