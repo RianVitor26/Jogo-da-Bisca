@@ -79,9 +79,22 @@ public class Bisca {
             System.out.println("*********************************************");
             /// System.out.println(cartas);
             rodada++;
+            for(int z = 17; z < 20; z++){
+                System.out.println("Rodada " + rodada);
+                System.out.println("*********************************************");
+                System.out.println("Cartas Jogador 1: " + Jogador1);
+                System.out.println("Cartas Jogador 2: " + Jogador2);
+                System.out.println("*********************************************");
+                System.out.println("Jogada do Jogador_1: " + Jogador1.get(jogada_1));
+                Jogador1.remove(Jogador1.get(jogada_1));
+                System.out.println("Jogada do Jogador_2: " + Jogador2.get(jogada_2));
+                Jogador2.remove(Jogador2.get(jogada_2));
+                System.out.println("*********************************************");
+                rodada++;
             if (rodada == 20) {
                 jogada_1 = 0;
                 jogada_2 = 0;
+                }
             }
         }
 
