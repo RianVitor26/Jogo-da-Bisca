@@ -84,8 +84,8 @@ public class Bisca{
             Jogador2.add(c2);
             cartas.remove(c2);
             System.out.println("*********************************************");
-            /// System.out.println(cartas);
             rodada++;
+        }
             for(int z = 17; z < 20; z++){
                 System.out.println("Rodada " + rodada);
                 System.out.println("*********************************************");
@@ -98,13 +98,11 @@ public class Bisca{
                 Jogador2.remove(Jogador2.get(jogada_2));
                 System.out.println("*********************************************");
                 rodada++;
-            if (rodada == 20) {
-                jogada_1 = 0;
-                jogada_2 = 0;
-                }
+                if (rodada == 20) {
+                    jogada_1 = 0;
+                    jogada_2 = 0;
+                    }
             }
         }
 
     }
-
-}
