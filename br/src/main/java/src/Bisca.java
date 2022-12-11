@@ -3,11 +3,18 @@ package src;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
+
+import main.java.src.TesteErro;
+
 import java.util.Random;
 import java.util.List;
 
-public class Bisca {
+public class Bisca{
     public static void main(String[] args) {
+
+        TesteErro jenkinsError = new TesteErro();
+        jenkinsError.gerando_erro();
+
         Map<String, Integer> value = new TreeMap<>();
         value.put("2", 0);
         value.put("3", 0);
