@@ -1,6 +1,8 @@
 package main.java.src;
 
 public class TesteErro {
-    ring erro = "Gerando um erro para o Jenkins";
-    System.out.println(erro);
+    public void gerando_erro() {
+        ring erro = "Gerando um erro para o Jenkins";
+        System.out.println(erro);
+    }
 }
