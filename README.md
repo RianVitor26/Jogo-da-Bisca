@@ -28,7 +28,7 @@ java Bisca.java
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA MIT](https://github.com/RianVitor26/Jogo-da-Bisca/blob/main/LICENCE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA MIT](https://github.com/RianVitor26/Jogo-da-Bisca/blob/main/LICENSE) para mais detalhes.
 
 ## Contribuidores
 
